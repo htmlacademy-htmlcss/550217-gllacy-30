@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Никита Тощев](https://up.htmlacademy.ru/htmlcss/30/user/550217).
-* Наставник: `Неизвестно`.
+- Студент: [Никита Тощев](https://up.htmlacademy.ru/htmlcss/30/user/550217).
+- Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana).
 
 ---
 
