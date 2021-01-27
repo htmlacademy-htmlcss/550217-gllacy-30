@@ -118,8 +118,8 @@
       </div>
 
     </header>
-    <main class="main">
-      <h1 class="main__title">Магазин мороженого "Глейси"</h1>
+    <main class="page-main">
+      <h1 class="page-main__title">Магазин мороженого "Глейси"</h1>
 
       <section class="slider">
         <h2 class="slider__title">Слайдер</h2>
@@ -170,7 +170,7 @@
       </section>
 
       <section class="promo">
-        <h2>Промо</h2>
+        <h2 class="visually-hidden">Промо</h2>
 
         <ul class="promo__list">
           <li class="promo__item">
@@ -244,7 +244,7 @@
 
       </section>
 
-      <div class="container">
+      <div class="other">
 
         <article class="blog">
           <h2 class="blog__title">Наш блог</h2>
@@ -260,37 +260,40 @@
 
       </div>
 
-        <section class="map">
-          <h2 class="map__title">Как нас найти</h2>
-          <div class="feedback">
+        <div class="map">
+
+          <section class="feedback">
+            <h2 class="feedback__title">Как нас найти</h2>
             <p class="feedback__adress">Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
             <p class="feedback__number">Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)</p>
             <a class="button feedback__button">Форма обратной связи</a>
-          </div>
-        </section>
+          </section>
 
-        <section class="feedback-popup">
-          <h2 class="feedback-popup__title">Форма обратной связи</h2>
+          <section class="feedback-popup">
+            <h2 class="feedback-popup__title">Форма обратной связи</h2>
 
-          <form class="feedback-popup__form form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="feedback-popup__title">Мы обязательно вам ответим!</p>
-            <button class="feedback-popup__button" type="button">Закрыть</button>
+            <form class="feedback-popup__form form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p class="feedback-popup__title">Мы обязательно вам ответим!</p>
+              <button class="feedback-popup__button" type="button">Закрыть</button>
 
-            <label class="feedback-popup__label" for="username">Имя Фамилия</label>
-            <input class="feedback-popup__input" type="text" id="username" name="username" placeholder="Имя Фамилия">
+              <label class="feedback-popup__label" for="username">Имя Фамилия</label>
+              <input class="feedback-popup__input" type="text" id="username" name="username" placeholder="Имя Фамилия">
 
-            <label class="feedback-popup__label">E-mail</label>
-            <input class="feedback-popup__input" type="email" placeholder="email@example.com">
+              <label class="feedback-popup__label">E-mail</label>
+              <input class="feedback-popup__input" type="email" placeholder="email@example.com">
 
-            <label class="feedback-popup__label" for="feedback-popup_textarea" >Сообщение</label>
-            <textarea class="feedback-popup__input" id="feedback-popup_textarea" >В свободной форме</textarea>
+              <label class="feedback-popup__label" for="feedback-popup_textarea" >Сообщение</label>
+              <textarea class="feedback-popup__input" id="feedback-popup_textarea" >В свободной форме</textarea>
 
-            <button class="button" type="submit">Отправить</button>
-          </form>
-        </section>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+
+          </section>
+
+        </div>
 
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="social">
 
         <ul class="social__list">
