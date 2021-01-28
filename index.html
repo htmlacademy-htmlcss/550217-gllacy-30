@@ -14,23 +14,23 @@
 
       <nav class="nav">
         <ul class="nav__list site-list">
-          <li class="site-list__item site-list catalog">
+          <li class="site-list__item site-list">
             <a class="site-list__link" href="catalog.html">Каталог</a>
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Новинки</a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Новинки</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Сливочное</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Сливочное</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Щербеты</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Щербеты</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Фруктовый лед</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Фруктовый лед</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Мелорин</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Мелорин</a>
               </li>
             </ul>
           </li>
@@ -44,7 +44,7 @@
 
         <ul class="nav__user-list user-list">
           <li class="user-list__item">
-            <a class="user-list__open-popup" href="#" aria-label="Поиск"><span class="user-list__icon user-list__icon--search"></span></a>
+            <a class="user-list__open-popup" href="#" aria-label="Поиск"></a>
 
             <form class="user-list__form search-form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="user-list__label" for="site-search">Поиск по сайту</label>
@@ -53,7 +53,7 @@
 
           </li>
           <li class="user-list__item">
-            <a class="user-list__open-popup" href="#">Вход<span class="user-list__icon user-list__icon--entry"></span></a>
+            <a class="user-list__open-popup" href="#">Вход</a>
 
             <form class="user-list__form entrance-form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="user-list__label" for="login-email">E-mail</label>
@@ -248,7 +248,7 @@
 
       </section>
 
-      <div class="other">
+      <section class="other" aria-label="Другое">
 
         <article class="blog">
           <h2 class="blog__title">Наш блог</h2>
@@ -262,22 +262,21 @@
           <button class="button news-sub__button" type="submit">Отправить</button>
         </form>
 
-      </div>
+      </section>
 
         <div class="map">
 
           <section class="feedback">
             <h2 class="feedback__title">Как нас найти</h2>
             <p class="feedback__adress">Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-            <p class="feedback__number">Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+            <p class="feedback__text">Для заказов по телефону: <a class="feedback__number" href="tel:+78124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
             <a class="button feedback__button">Форма обратной связи</a>
           </section>
 
           <section class="feedback-popup">
-            <h2 class="feedback-popup__title">Форма обратной связи</h2>
 
             <form class="feedback-popup__form form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="feedback-popup__title">Мы обязательно вам ответим!</p>
+              <h2 class="feedback-popup__title">Мы обязательно вам ответим!</h2>
               <button class="feedback-popup__button" type="button">Закрыть</button>
 
               <label class="feedback-popup__label" for="username">Имя Фамилия</label>
@@ -298,43 +297,36 @@
 
     </main>
     <footer class="page-footer">
-      <div class="social">
 
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">Instagram</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">Twitter</a>
-          </li>
-        </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">Twitter</a>
+        </li>
+      </ul>
 
-      </div>
-
-      <div class="documents">
-
-        <ul class="documents__list">
-          <li class="documents__item">
-            <a class="documents__link documents__link--active" href="#">Для поставщиков</a>
-          </li>
-          <li class="documents__item">
-            <a class="documents__link" href="#">О производстве</a>
-          </li>
-          <li class="documents__item">
-            <a class="documents__link" href="#">Наши документы</a>
-          </li>
-          <li class="documents__item">
-            <a class="documents__link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-
-      </div>
+      <ul class="documents">
+        <li class="documents__item">
+          <a class="documents__link documents__link--active" href="#">Для поставщиков</a>
+        </li>
+        <li class="documents__item">
+          <a class="documents__link" href="#">О производстве</a>
+        </li>
+        <li class="documents__item">
+          <a class="documents__link" href="#">Наши документы</a>
+        </li>
+        <li class="documents__item">
+          <a class="documents__link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
 
       <div class="copyright">
         <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/htmlcss">
