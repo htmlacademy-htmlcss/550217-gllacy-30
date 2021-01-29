@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Глейси</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
 
       <a class="page-header__logo-link">
@@ -46,29 +46,33 @@
           <li class="user-list__item">
             <a class="user-list__open-popup" href="#" aria-label="Поиск"></a>
 
-            <form class="user-list__form search-form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="user-list__label" for="site-search">Поиск по сайту</label>
-              <input class="user-list__input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
+            <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="search-form__label" for="site-search">Поиск по сайту</label>
+              <input class="search-form__input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
             </form>
 
           </li>
           <li class="user-list__item">
             <a class="user-list__open-popup" href="#">Вход</a>
 
-            <form class="user-list__form entrance-form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="user-list__label" for="login-email">E-mail</label>
-              <input class="user-list__input" type="email" id="login-email" name="email" placeholder="email@example.com">
-              <label class="user-list__label" for="login-password">Пароль</label>
-              <input class="user-list__input" type="password" id="login-password" name="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;">
-              <button class="button user-list__button" type="submit">Войти</button>
-            </form>
+            <section class="entrance">
+              <form class="entrance__form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
+                <label class="entrance__label" for="login-email">E-mail</label>
+                <input class="entrance__input" type="email" id="login-email" name="email" placeholder="email@example.com">
+                <label class="entrance__label" for="login-password">Пароль</label>
+                <input class="entrance__input" type="password" id="login-password" name="password" placeholder="•••••••">
+                <button class="button entrance__button" type="submit">Войти</button>
+              </form>
 
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
+              <p class="entrance__links">
+                <a class="entrance__link" href="#">Забыли пароль?</a>
+                <a class="entrance__link" href="#">Новая регистрация</a>
+              </p>
+            </section>
 
           </li>
           <li class="user-list__item">
-            <a class="user-list__open-popup" href="#">Пусто<span class="user-list__icon user-list__icon--basket"></span></a>
+            <a class="user-list__open-popup" href="#">Пусто</a>
 
             <section class="basket-popup">
               <h2 class="basket-popup__title">Козина</h2>
@@ -112,10 +116,9 @@
         </ul>
       </nav>
 
-      <div class="contacts">
-        <p class="contacts__time">с 10 до 20, ежедневно</p>
-        <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
-      </div>
+        <p class="contacts">с 10 до 20, ежедневно
+          <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
+        </p>
 
     </header>
     <main class="page-main">
