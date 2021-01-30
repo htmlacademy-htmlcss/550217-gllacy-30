@@ -55,11 +55,17 @@
             <a class="user-list__open-popup" href="#">Вход</a>
 
             <section class="entrance">
+              <h2 class="entrance__title visually-hidden">Форма входа</h2>
+
               <form class="entrance__form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
-                <label class="entrance__label" for="login-email">E-mail</label>
-                <input class="entrance__input" type="email" id="login-email" name="email" placeholder="email@example.com">
-                <label class="entrance__label" for="login-password">Пароль</label>
-                <input class="entrance__input" type="password" id="login-password" name="password" placeholder="•••••••">
+                <p>
+                  <label class="entrance__label" for="login-email">E-mail</label>
+                  <input class="entrance__input" type="email" id="login-email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label class="entrance__label" for="login-password">Пароль</label>
+                  <input class="entrance__input" type="password" id="login-password" name="password" placeholder="•••••••">
+                </p>
                 <button class="button entrance__button" type="submit">Войти</button>
               </form>
 
@@ -74,7 +80,7 @@
             <a class="user-list__open-popup" href="#">2 товара</a>
 
             <section class="basket-popup">
-              <h2 class="basket-popup__title">Козина</h2>
+              <h2 class="basket-popup__title">Корзина</h2>
 
               <table class="basket-popup__table basket-table">
                 <tr class="basket-table__tr">
@@ -141,7 +147,7 @@
 
             <label for="filter-sorting">Сортировка:</label>
             <select id="filter-sorting" name="sorting">
-              <option value="popular">по популярности</option>
+              <option value="popular" selected>по популярности</option>
               <option value="price-increase">сначала недорогие</option>
               <option value="price-decrease">сначала дорогие</option>
               <option value="fat">по жирности</option>

@@ -56,11 +56,17 @@
             <a class="user-list__open-popup" href="#">Вход</a>
 
             <section class="entrance">
+              <h2 class="entrance__title visually-hidden">Форма входа</h2>
+
               <form class="entrance__form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
-                <label class="entrance__label" for="login-email">E-mail</label>
-                <input class="entrance__input" type="email" id="login-email" name="email" placeholder="email@example.com">
-                <label class="entrance__label" for="login-password">Пароль</label>
-                <input class="entrance__input" type="password" id="login-password" name="password" placeholder="•••••••">
+                <p>
+                  <label class="entrance__label" for="login-email">E-mail</label>
+                  <input class="entrance__input" type="email" id="login-email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label class="entrance__label" for="login-password">Пароль</label>
+                  <input class="entrance__input" type="password" id="login-password" name="password" placeholder="•••••••">
+                </p>
                 <button class="button entrance__button" type="submit">Войти</button>
               </form>
 
@@ -75,7 +81,7 @@
             <a class="user-list__open-popup" href="#">Пусто</a>
 
             <section class="basket-popup">
-              <h2 class="basket-popup__title">Козина</h2>
+              <h2 class="basket-popup__title visually-hidden">Корзина</h2>
 
               <table class="basket-popup__table basket-table">
                 <tr class="basket-table__tr">
@@ -270,30 +276,36 @@
         <div class="map">
 
           <section class="feedback">
-            <h2 class="feedback__title">Как нас найти</h2>
-            <p class="feedback__adress">Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-            <p class="feedback__text">Для заказов по телефону: <a class="feedback__number" href="tel:+78124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
+            <h2 class="feedback__title visually-hidden">Как нас найти</h2>
+            <p class="feedback__text">Адрес главного офиса и офлайн-магазина: <span class="feedback__adress">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+            <p class="feedback__text">Для заказов по телефону:
+              <a class="feedback__number" href="tel:+78124502525">8 812 450-25-25</a>
+               (с 10 до 20 ежедневно)</p>
             <a class="button feedback__button">Форма обратной связи</a>
           </section>
 
           <section class="feedback-popup">
+            <h2 class="feedback-popup__title">Мы обязательно вам ответим!</h2>
 
-            <form class="feedback-popup__form form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
-              <h2 class="feedback-popup__title">Мы обязательно вам ответим!</h2>
-              <button class="feedback-popup__button" type="button">Закрыть</button>
+            <form class="feedback-popup__form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
 
-              <label class="feedback-popup__label" for="username">Имя Фамилия</label>
-              <input class="feedback-popup__input" type="text" id="username" name="username" placeholder="Имя Фамилия">
-
-              <label class="feedback-popup__label">E-mail</label>
-              <input class="feedback-popup__input" type="email" placeholder="email@example.com">
-
-              <label class="feedback-popup__label" for="feedback-popup_textarea" >Сообщение</label>
-              <textarea class="feedback-popup__input" id="feedback-popup_textarea" >В свободной форме</textarea>
+              <p>
+                <label class="visually-hidden" for="username">Имя Фамилия</label>
+                <input class="feedback-popup__input" type="text" id="username" name="username" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label class="visually-hidden">E-mail</label>
+                <input class="feedback-popup__input" type="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label class="visually-hidden" for="feedback-popup_textarea">Сообщение</label>
+                <textarea class="feedback-popup__input" id="feedback-popup_textarea">В свободной форме</textarea>
+              </p>
 
               <button class="button" type="submit">Отправить</button>
             </form>
 
+            <button class="feedback-popup__button" type="button">Закрыть</button>
           </section>
 
         </div>
