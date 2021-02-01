@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Глейси</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
 
       <a class="page-header__logo-link">
@@ -14,23 +14,23 @@
 
       <nav class="nav">
         <ul class="nav__list site-list">
-          <li class="site-list__item site-list catalog">
+          <li class="site-list__item site-list">
             <a class="site-list__link" href="catalog.html">Каталог</a>
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Новинки</a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Новинки</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Сливочное</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Сливочное</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Щербеты</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Щербеты</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Фруктовый лед</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Фруктовый лед</a>
               </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#">Мелорин</a>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Мелорин</a>
               </li>
             </ul>
           </li>
@@ -44,34 +44,44 @@
 
         <ul class="nav__user-list user-list">
           <li class="user-list__item">
-            <a class="user-list__open-popup" href="#" aria-label="Поиск"><span class="user-list__icon user-list__icon--search"></span></a>
+            <a class="user-list__open-popup" href="#" aria-label="Поиск"></a>
 
-            <form class="user-list__form search-form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="user-list__label" for="site-search">Поиск по сайту</label>
-              <input class="user-list__input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
+            <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="search-form__label" for="site-search">Поиск по сайту</label>
+              <input class="search-form__input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
             </form>
 
           </li>
           <li class="user-list__item">
-            <a class="user-list__open-popup" href="#">Вход<span class="user-list__icon user-list__icon--entry"></span></a>
+            <a class="user-list__open-popup" href="#">Вход</a>
 
-            <form class="user-list__form entrance-form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="user-list__label" for="login-email">E-mail</label>
-              <input class="user-list__input" type="email" id="login-email" name="email" placeholder="email@example.com">
-              <label class="user-list__label" for="login-password">Пароль</label>
-              <input class="user-list__input" type="password" id="login-password" name="password" placeholder="&middot;&middot;&middot;&middot;&middot;&middot;">
-              <button class="button user-list__button" type="submit">Войти</button>
-            </form>
+            <section class="entrance">
+              <h2 class="entrance__title visually-hidden">Форма входа</h2>
 
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
+              <form class="entrance__form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
+                <p>
+                  <label class="entrance__label" for="login-email">E-mail</label>
+                  <input class="entrance__input" type="email" id="login-email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label class="entrance__label" for="login-password">Пароль</label>
+                  <input class="entrance__input" type="password" id="login-password" name="password" placeholder="•••••••">
+                </p>
+                <button class="button entrance__button" type="submit">Войти</button>
+              </form>
+
+              <p class="entrance__links">
+                <a class="entrance__link" href="#">Забыли пароль?</a>
+                <a class="entrance__link" href="#">Новая регистрация</a>
+              </p>
+            </section>
 
           </li>
           <li class="user-list__item">
-            <a class="user-list__open-popup" href="#">Пусто<span class="user-list__icon user-list__icon--basket"></span></a>
+            <a class="user-list__open-popup" href="#">Пусто</a>
 
             <section class="basket-popup">
-              <h2 class="basket-popup__title">Козина</h2>
+              <h2 class="basket-popup__title visually-hidden">Корзина</h2>
 
               <table class="basket-popup__table basket-table">
                 <tr class="basket-table__tr">
@@ -112,10 +122,9 @@
         </ul>
       </nav>
 
-      <div class="contacts">
-        <p class="contacts__time">с 10 до 20, ежедневно</p>
-        <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
-      </div>
+        <p class="contacts">с 10 до 20, ежедневно
+          <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
+        </p>
 
     </header>
     <main class="page-main">
@@ -126,46 +135,32 @@
 
         <ul class="slider__list">
 
-          <li class="slider__item">
-            <div class="slider__images">
-              <img class="slider__image" src="https://via.placeholder.com/400x600" alt="Пломбир с помадкой">
-              <img class="slider__image" src="https://via.placeholder.com/400x600" alt="Клубничный щербет">
-            </div>
-            <h3 class="slider__description">Пломбир с помадкой и клубничный щербет</h3>
+          <li class="slider__item" id="slide1">
+            <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
             <a class="button slider__button" href="#">Давайте оба!</a>
           </li>
 
-          <li class="slider__item">
-            <div class="slider__images">
-              <img class="slider__image" src="https://via.placeholder.com/400x600" alt="Шоколадный пломбир">
-              <img class="slider__image" src="https://via.placeholder.com/400x600" alt="Лимонный сорбет">
-            </div>
-            <h3 class="slider__description">Шоколадный пломбир и лимонный сорбет</h3>
+          <li class="slider__item" id="slide2">
+            <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h3>
             <a class="button slider__button" href="#">Давайте оба!</a>
           </li>
 
-          <li class="slider__item">
-            <div class="slider__images">
-              <img class="slider__image" src="https://via.placeholder.com/400x600" alt="Крем-брюле">
-              <img class="slider__image" src="https://via.placeholder.com/400x600" alt="Пломбир с малиновым джемом">
-            </div>
-            <h3 class="slider__description">Крем-брюле и пломбир с малиновым джемом</h3>
+          <li class="slider__item" id="slide3">
+            <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
             <a class="button slider__button" href="#">Давайте оба!</a>
           </li>
 
         </ul>
 
-        <ul class="slider__switch switch-list">
-          <li class="switch-list__item">
-            <button class="switch-list__button" type="button"></button>
-          </li>
-          <li class="switch-list__item">
-            <button class="switch-list__button" type="button"></button>
-          </li>
-          <li class="switch-list__item">
-            <button class="switch-list__button" type="button"></button>
-          </li>
-        </ul>
+        <div class="slider__controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+        </div>
+
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle" checked>
 
       </section>
 
@@ -248,7 +243,7 @@
 
       </section>
 
-      <div class="other">
+      <section class="other" aria-label="Другое">
 
         <article class="blog">
           <h2 class="blog__title">Наш блог</h2>
@@ -262,79 +257,77 @@
           <button class="button news-sub__button" type="submit">Отправить</button>
         </form>
 
-      </div>
+      </section>
 
         <div class="map">
 
           <section class="feedback">
-            <h2 class="feedback__title">Как нас найти</h2>
-            <p class="feedback__adress">Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-            <p class="feedback__number">Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+            <h2 class="feedback__title visually-hidden">Как нас найти</h2>
+            <p class="feedback__text">Адрес главного офиса и офлайн-магазина: <span class="feedback__adress">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+            <p class="feedback__text">Для заказов по телефону:
+              <a class="feedback__number" href="tel:+78124502525">8 812 450-25-25</a>
+               (с 10 до 20 ежедневно)</p>
             <a class="button feedback__button">Форма обратной связи</a>
           </section>
 
           <section class="feedback-popup">
-            <h2 class="feedback-popup__title">Форма обратной связи</h2>
+            <h2 class="feedback-popup__title">Мы обязательно вам ответим!</h2>
 
-            <form class="feedback-popup__form form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="feedback-popup__title">Мы обязательно вам ответим!</p>
-              <button class="feedback-popup__button" type="button">Закрыть</button>
+            <form class="feedback-popup__form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
 
-              <label class="feedback-popup__label" for="username">Имя Фамилия</label>
-              <input class="feedback-popup__input" type="text" id="username" name="username" placeholder="Имя Фамилия">
-
-              <label class="feedback-popup__label">E-mail</label>
-              <input class="feedback-popup__input" type="email" placeholder="email@example.com">
-
-              <label class="feedback-popup__label" for="feedback-popup_textarea" >Сообщение</label>
-              <textarea class="feedback-popup__input" id="feedback-popup_textarea" >В свободной форме</textarea>
+              <p>
+                <label class="visually-hidden" for="username">Имя Фамилия</label>
+                <input class="feedback-popup__input" type="text" id="username" name="username" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label class="visually-hidden">E-mail</label>
+                <input class="feedback-popup__input" type="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label class="visually-hidden" for="feedback-popup_textarea">Сообщение</label>
+                <textarea class="feedback-popup__input" id="feedback-popup_textarea">В свободной форме</textarea>
+              </p>
 
               <button class="button" type="submit">Отправить</button>
             </form>
 
+            <button class="feedback-popup__button" type="button">Закрыть</button>
           </section>
 
         </div>
 
     </main>
     <footer class="page-footer">
-      <div class="social">
 
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">Instagram</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">Twitter</a>
-          </li>
-        </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">Twitter</a>
+        </li>
+      </ul>
 
-      </div>
-
-      <div class="documents">
-
-        <ul class="documents__list">
-          <li class="documents__item">
-            <a class="documents__link documents__link--active" href="#">Для поставщиков</a>
-          </li>
-          <li class="documents__item">
-            <a class="documents__link" href="#">О производстве</a>
-          </li>
-          <li class="documents__item">
-            <a class="documents__link" href="#">Наши документы</a>
-          </li>
-          <li class="documents__item">
-            <a class="documents__link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-
-      </div>
+      <ul class="documents">
+        <li class="documents__item">
+          <a class="documents__link documents__link--active" href="#">Для поставщиков</a>
+        </li>
+        <li class="documents__item">
+          <a class="documents__link" href="#">О производстве</a>
+        </li>
+        <li class="documents__item">
+          <a class="documents__link" href="#">Наши документы</a>
+        </li>
+        <li class="documents__item">
+          <a class="documents__link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
 
       <div class="copyright">
         <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/htmlcss">
