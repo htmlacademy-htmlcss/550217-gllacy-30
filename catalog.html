@@ -143,72 +143,74 @@
 
       <section class="product-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="product-filter__form filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="product-filter__form filter-form" name="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-            <label for="filter-sorting">Сортировка:</label>
-            <select id="filter-sorting" name="sorting">
-              <option value="popular" selected>по популярности</option>
-              <option value="price-increase">сначала недорогие</option>
-              <option value="price-decrease">сначала дорогие</option>
-              <option value="fat">по жирности</option>
+            <label class="filter-form__label" for="filter-sorting">Сортировка:</label>
+            <select class="filter-form__select" id="filter-sorting" name="sorting">
+              <option class="filter-form__option" value="popular" selected>по популярности</option>
+              <option class="filter-form__option" value="price-increase">сначала недорогие</option>
+              <option class="filter-form__option" value="price-decrease">сначала дорогие</option>
+              <option class="filter-form__option" value="fat">по жирности</option>
             </select>
 
-            <label for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
-            <input type="range" id="filter-range" name="range" min="100" max="500">
+            <div class="filter-form__wrapper">
+              <label class="filter-form__label" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
+              <input class="filter-form__input" type="range" id="filter-range" name="range" min="100" max="500">
+            </div>
 
-          <fieldset>
-            <legend>Жирность:</legend>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__title">Жирность:</legend>
 
-            <ul>
-              <li>
-                <input type="radio" name="product-fat" value="0%" id="zero-percent">
-                <label for="zero-percent">0%</label>
+            <ul class="filter-form__list">
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="radio" name="product-fat" value="0%" id="zero-percent">
+                <label class="filter-form__label" for="zero-percent">0%</label>
               </li>
-              <li>
-                <input type="radio" name="product-fat" value="до 10%" id="till-ten-percent" checked>
-                <label for="till-ten-percent">до 10%</label>
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="radio" name="product-fat" value="до 10%" id="till-ten-percent" checked>
+                <label class="filter-form__label" for="till-ten-percent">до 10%</label>
               </li>
-              <li>
-                <input type="radio" name="product-fat" value="до 30%" id="less-thirty-percent">
-                <label for="less-thirty-percent">до 30%</label>
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="radio" name="product-fat" value="до 30%" id="less-thirty-percent">
+                <label class="filter-form__label" for="less-thirty-percent">до 30%</label>
               </li>
-              <li>
-                <input type="radio" name="product-fat" value="выше 30%" id="more-thirty-percent">
-                <label for="more-thirty-percent">выше 30%</label>
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="radio" name="product-fat" value="выше 30%" id="more-thirty-percent">
+                <label class="filter-form__label" for="more-thirty-percent">выше 30%</label>
               </li>
             </ul>
 
           </fieldset>
 
-          <fieldset>
-            <legend>Наполнители:</legend>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__title">Наполнители:</legend>
 
-            <ul>
-              <li>
-                <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
-                <label for="filter-chocolate">шоколадные</label>
+            <ul class="filter-form__list">
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                <label class="filter-form__label" for="filter-chocolate">шоколадные</label>
               </li>
               <li>
-                <input type="checkbox" name="sugar-topping" id="filter-sugar-topping" checked>
-                <label for="filter-sugar-topping">сахарные присыпки</label>
+                <input class="filter-form__input" type="checkbox" name="sugar-topping" id="filter-sugar-topping" checked>
+                <label class="filter-form__label" for="filter-sugar-topping">сахарные присыпки</label>
               </li>
-              <li>
-                <input type="checkbox" name="fruits" id="filter-fruits">
-                <label for="filter-fruits">фрукты</label>
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="checkbox" name="fruits" id="filter-fruits">
+                <label class="filter-form__label" for="filter-fruits">фрукты</label>
               </li>
-              <li>
-                <input type="checkbox" name="syrups" id="filter-syrups">
-                <label for="filter-syrups">сиропы</label>
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="checkbox" name="syrups" id="filter-syrups">
+                <label class="filter-form__label" for="filter-syrups">сиропы</label>
               </li>
-              <li>
-                <input type="checkbox" name="jams" id="filter-jams">
-                <label for="filter-jams">джемы</label>
+              <li class="filter-form__item">
+                <input class="filter-form__input" type="checkbox" name="jams" id="filter-jams">
+                <label class="filter-form__label" for="filter-jams">джемы</label>
               </li>
             </ul>
 
           </fieldset>
 
-          <button type="submit">Применить</button>
+          <button class="filter-form__button" type="submit">Применить</button>
         </form>
       </section>
 
@@ -314,11 +316,12 @@
           </li>
         </ul>
 
-        <div class="product__pagination pagination">
-          <a class="pagination__arrow-back" aria-label="Страница назад"></a>
-          <ul class="pagination__list">
+          <ul class="pagination">
             <li class="pagination__item">
-              <a class="pagination__link">1</a>
+              <a class="pagination__link pagination__link--back" aria-label="Страница назад"></a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active">1</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="#">2</a>
@@ -332,9 +335,10 @@
             <li class="pagination__item">
               <a class="pagination__link" href="#">5</a>
             </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--forwar" aria-label="Страница вперед"></a>
+            </li>
           </ul>
-          <a class="pagination__arrow-forward" aria-label="Страница вперед" href="#"></a>
-        </div>
 
       </section>
     </main>
