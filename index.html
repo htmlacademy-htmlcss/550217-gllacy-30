@@ -9,6 +9,9 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
     <title>Глейси</title>
   </head>
   <body class="page-body">
@@ -24,13 +27,13 @@
             <a class="site-list__link" href="catalog.html">Каталог</a>
             <ul class="submenu">
               <li class="submenu__item">
-                <a class="submenu__link" href="#">Новинки</a>
+                <a class="submenu__link submenu__link--new" href="#">Новинки</a>
               </li>
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Сливочное</a>
               </li>
               <li class="submenu__item">
-                <a class="submenu__link" href="#">Щербеты</a>
+                <a class="submenu__link submenu__link--active" href="#">Щербеты</a>
               </li>
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Фруктовый лед</a>
@@ -52,9 +55,9 @@
           <li class="user-list__item">
             <a class="user-list__open-popup" href="#" aria-label="Поиск"></a>
 
-            <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="search-form__label" for="site-search">Поиск по сайту</label>
-              <input class="search-form__input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
+            <form class="search-form form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="search-form__label visually-hidden" for="site-search">Поиск по сайту</label>
+              <input class="search-form__input input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
             </form>
 
           </li>
@@ -62,16 +65,16 @@
             <a class="user-list__open-popup" href="#">Вход</a>
 
             <section class="entrance">
-              <h2 class="entrance__title visually-hidden">Форма входа</h2>
+              <h2 class="visually-hidden">Форма входа</h2>
 
-              <form class="entrance__form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
+              <form class="entrance__form form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
                 <p>
-                  <label class="entrance__label" for="login-email">E-mail</label>
-                  <input class="entrance__input" type="email" id="login-email" name="email" placeholder="email@example.com">
+                  <label class="entrance__label visually-hidden" for="login-email">E-mail</label>
+                  <input class="entrance__input input" type="email" id="login-email" name="email" placeholder="email@example.com">
                 </p>
                 <p>
-                  <label class="entrance__label" for="login-password">Пароль</label>
-                  <input class="entrance__input" type="password" id="login-password" name="password" placeholder="•••••••">
+                  <label class="entrance__label visually-hidden" for="login-password">Пароль</label>
+                  <input class="entrance__input input" type="password" id="login-password" name="password" placeholder="•••••••">
                 </p>
                 <button class="button entrance__button" type="submit">Войти</button>
               </form>
@@ -91,21 +94,14 @@
 
               <table class="basket-popup__table basket-table">
                 <tr class="basket-table__tr">
-                  <th class="basket-table__th">Удалить</th>
-                  <th class="basket-table__th">Изображение</th>
-                  <th class="basket-table__th">Название</th>
-                  <th class="basket-table__th">Количество</th>
-                  <th class="basket-table__th">Цена</th>
-                </tr>
-                <tr class="basket-table__tr">
                   <th class="basket-table__th">
                     <span class="basket-table__delete">Удалить</span>
                   </th>
                   <th class="basket-table__th">
                     <img class="basket-table__image" src="img/products/product_1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                   </th>
-                  <th class="basket-table__th">Пломбир с апельсиновым джемом</th>
-                  <th class="basket-table__th">1,5 кг х 200 руб.</th>
+                  <th class="basket-table__th basket-table__title">Пломбир с апельсиновым джемом</th>
+                  <th class="basket-table__th">1,5 кг х <span class="basket-table__price-weight"> 200 руб.</span></th>
                   <th class="basket-table__th">300 руб.</th>
                 </tr>
                 <tr class="basket-table__tr">
@@ -115,12 +111,12 @@
                   <th class="basket-table__th">
                     <img class="basket-table__image" src="img/products/product_3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   </th>
-                  <th class="basket-table__th">Клубничный пломбир с присыпкой из белого шоколада</th>
-                  <th class="basket-table__th">1,5 кг х 300 руб.</th>
+                  <th class="basket-table__th basket-table__title">Клубничный пломбир с присыпкой из белого шоколада</th>
+                  <th class="basket-table__th basket-table__quantity">1,5 кг х <span class="basket-table__price-weight"> 300 руб.</span></th>
                   <th class="basket-table__th">450 руб.</th>
                 </tr>
               </table>
-              <p class="basket-popup__total">Итого:<span class="total">750 руб.</span></p>
+              <p class="basket-popup__total">Итого:<span class="total"> 750 руб.</span></p>
               <button class="basket-popup__button button" type="submit">Оформить заказ</button>
             </section>
 
@@ -134,15 +130,15 @@
 
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Магазин мороженого "Глейси"</h1>
+      <h1 class="page-main__title visually-hidden">Магазин мороженого "Глейси"</h1>
 
       <section class="slider">
-        <h2 class="slider__title">Слайдер</h2>
+        <h2 class="visually-hidden">Слайдер</h2>
 
         <ul class="slider__list">
 
           <li class="slider__item" id="slide1">
-            <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
+            <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
             <a class="button slider__button" href="#">Давайте оба!</a>
           </li>
 
@@ -152,9 +148,11 @@
           </li>
 
           <li class="slider__item" id="slide3">
-            <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
             <a class="button slider__button" href="#">Давайте оба!</a>
           </li>
+
+
 
         </ul>
 
@@ -189,10 +187,10 @@
       </section>
 
       <section class="product">
-        <h2 class="product__title">Каталог продуктов</h2>
+        <h2 class="product__title visually-hidden">Каталог продуктов</h2>
 
         <ul class="product__list">
-          <li class="product__item">
+          <li class="product__item product__item--hit">
             <img class="product__image" src="img/products/product_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="product__price">310 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
@@ -200,7 +198,7 @@
             </h3>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
-          <li class="product__item">
+          <li class="product__item product__item--hit">
             <img class="product__image" src="img/products/product_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <p class="product__price">380 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
@@ -208,7 +206,7 @@
             </h3>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
-          <li class="product__item">
+          <li class="product__item product__item--hit">
             <img class="product__image" src="img/products/product_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p class="product__price">355 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
@@ -216,9 +214,9 @@
             </h3>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
-          <li class="product__item">
+          <li class="product__item product__item--hit">
             <img class="product__image" src="img/products/product_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <span class="product__price">415 &#8381;/кг</span>
+            <p class="product__price">415 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
               <a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h3>
@@ -229,7 +227,7 @@
       </section>
 
       <section class="about-us">
-        <h2 class="about-us__title">О нас</h2>
+        <h2 class="about-us__title visually-hidden">О нас</h2>
         <p class="about-us__description">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 
         <ul class="about-us__list">
@@ -252,14 +250,14 @@
       <section class="other" aria-label="Другое">
 
         <article class="blog">
-          <h2 class="blog__title">Наш блог</h2>
+          <h2 class="blog__title visually-hidden">Наш блог</h2>
           <p class="blog__text">Новое в нашем блоге</p>
           <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
 
-        <form class="news-sub" name="news-sub-form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="news-sub form" name="news-sub-form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="news-sub__label" for="news-sub-input">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
-          <input class="news-sub__input" id="news-sub-input" type="email" placeholder="email@example.com">
+          <input class="news-sub__input input" id="news-sub-input" type="email" placeholder="email@example.com">
           <button class="button news-sub__button" type="submit">Отправить</button>
         </form>
 
@@ -269,9 +267,9 @@
 
           <section class="feedback">
             <h2 class="feedback__title visually-hidden">Как нас найти</h2>
-            <p class="feedback__text">Адрес главного офиса и офлайн-магазина: <span class="feedback__adress">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+            <p class="feedback__text">Адрес главного офиса и офлайн-магазина: <span class="feedback__text-strong">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
             <p class="feedback__text">Для заказов по телефону:
-              <a class="feedback__number" href="tel:+78124502525">8 812 450-25-25</a>
+              <a class="feedback__text-strong" href="tel:+78124502525">8 812 450-25-25</a>
                (с 10 до 20 ежедневно)</p>
             <a class="button feedback__button">Форма обратной связи</a>
           </section>
@@ -279,19 +277,19 @@
           <section class="feedback-popup">
             <h2 class="feedback-popup__title">Мы обязательно вам ответим!</h2>
 
-            <form class="feedback-popup__form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
+            <form class="feedback-popup__form form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
 
               <p>
                 <label class="visually-hidden" for="username">Имя Фамилия</label>
-                <input class="feedback-popup__input" type="text" id="username" name="username" placeholder="Имя Фамилия">
+                <input class="feedback-popup__input input" type="text" id="username" name="username" placeholder="Имя Фамилия">
               </p>
               <p>
                 <label class="visually-hidden">E-mail</label>
-                <input class="feedback-popup__input" type="email" placeholder="email@example.com">
+                <input class="feedback-popup__input input" type="email" placeholder="email@example.com">
               </p>
               <p>
                 <label class="visually-hidden" for="feedback-popup_textarea">Сообщение</label>
-                <textarea class="feedback-popup__input" id="feedback-popup_textarea">В свободной форме</textarea>
+                <textarea class="feedback-popup__input input" id="feedback-popup_textarea">В свободной форме</textarea>
               </p>
 
               <button class="button" type="submit">Отправить</button>
@@ -322,7 +320,7 @@
 
       <ul class="documents">
         <li class="documents__item">
-          <a class="documents__link documents__link--active" href="#">Для поставщиков</a>
+          <a class="documents__link" href="#">Для поставщиков</a>
         </li>
         <li class="documents__item">
           <a class="documents__link" href="#">О производстве</a>
