@@ -27,7 +27,7 @@
             <a class="site-list__link site-list__link--active" href="catalog.html">Каталог</a>
             <ul class="submenu">
               <li class="submenu__item">
-                <a class="submenu__link" href="#">Новинки</a>
+                <a class="submenu__link submenu__link--new" href="#">Новинки</a>
               </li>
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Сливочное</a>
@@ -65,7 +65,7 @@
             <a class="user-list__open-popup" href="#">Вход</a>
 
             <section class="entrance">
-              <h2 class="entrance__title visually-hidden">Форма входа</h2>
+              <h2 class="visually-hidden">Форма входа</h2>
 
               <form class="entrance__form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
                 <p>
@@ -155,7 +155,7 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="product-filter__form filter-form" name="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-            <label class="filter-form__label" for="filter-sorting">Сортировка:</label>
+            <label class="filter-form__title" for="filter-sorting">Сортировка:</label>
             <select class="filter-form__select" id="filter-sorting" name="sorting">
               <option class="filter-form__option" value="popular" selected>по популярности</option>
               <option class="filter-form__option" value="price-increase">сначала недорогие</option>
@@ -164,7 +164,7 @@
             </select>
 
             <div class="filter-form__wrapper">
-              <label class="filter-form__label" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
+              <label class="filter-form__title" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
               <input class="filter-form__input" type="range" id="filter-range" name="range" min="100" max="500">
             </div>
 
@@ -371,7 +371,7 @@
 
       <ul class="documents">
         <li class="documents__item">
-          <a class="documents__link documents__link--active" href="#">Для поставщиков</a>
+          <a class="documents__link" href="#">Для поставщиков</a>
         </li>
         <li class="documents__item">
           <a class="documents__link" href="#">О производстве</a>
