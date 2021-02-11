@@ -15,127 +15,122 @@
     <title>Каталог</title>
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header container">
 
-      <a class="page-header__logo-link" href="index.html">
+      <a class="page-header__logo-link">
         <img class="page-header__logo-image" src="img/logo_gllacy.svg" width="154" height="64" alt="Логотип магазина 'Глейси'">
       </a>
 
       <nav class="nav">
         <ul class="nav__list site-list">
           <li class="site-list__item site-list">
-            <a class="site-list__link site-list__link--active" href="catalog.html">Каталог</a>
-            <ul class="submenu">
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Новинки</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Сливочное</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Щербеты</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Доставка и оплата</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">О компании</a>
-          </li>
-        </ul>
-
-        <ul class="nav__user-list user-list">
-          <li class="user-list__item">
-            <a class="user-list__open-popup" href="#" aria-label="Поиск"></a>
-
-            <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="search-form__label" for="site-search">Поиск по сайту</label>
-              <input class="search-form__input input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
-            </form>
-
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__open-popup" href="#">Вход</a>
-
-            <section class="entrance">
-              <h2 class="entrance__title visually-hidden">Форма входа</h2>
-
-              <form class="entrance__form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
-                <p>
-                  <label class="entrance__label" for="login-email">E-mail</label>
-                  <input class="entrance__input input" type="email" id="login-email" name="email" placeholder="email@example.com">
-                </p>
-                <p>
-                  <label class="entrance__label" for="login-password">Пароль</label>
-                  <input class="entrance__input input" type="password" id="login-password" name="password" placeholder="•••••••">
-                </p>
-                <button class="button entrance__button" type="submit">Войти</button>
-              </form>
-
-              <p class="entrance__links">
-                <a class="entrance__link" href="#">Забыли пароль?</a>
-                <a class="entrance__link" href="#">Новая регистрация</a>
-              </p>
-            </section>
-
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__open-popup" href="#">2 товара</a>
-
-            <section class="basket-popup">
-              <h2 class="basket-popup__title">Корзина</h2>
-
-              <table class="basket-popup__table basket-table">
-                <tr class="basket-table__tr">
-                  <th class="basket-table__th">Удалить</th>
-                  <th class="basket-table__th">Изображение</th>
-                  <th class="basket-table__th">Название</th>
-                  <th class="basket-table__th">Количество</th>
-                  <th class="basket-table__th">Цена</th>
-                </tr>
-                <tr class="basket-table__tr">
-                  <th class="basket-table__th">
-                    <span class="basket-table__delete">Удалить</span>
-                  </th>
-                  <th class="basket-table__th">
-                    <img class="basket-table__image" src="img/products/product_1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                  </th>
-                  <th class="basket-table__th">Пломбир с апельсиновым джемом</th>
-                  <th class="basket-table__th">1,5 кг х 200 руб.</th>
-                  <th class="basket-table__th">300 руб.</th>
-                </tr>
-                <tr class="basket-table__tr">
-                  <th class="basket-table__th">
-                    <span class="basket-table__delete">Удалить</span>
-                  </th>
-                  <th class="basket-table__th">
-                    <img class="basket-table__image" src="img/products/product_3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  </th>
-                  <th class="basket-table__th">Клубничный пломбир с присыпкой из белого шоколада</th>
-                  <th class="basket-table__th">1,5 кг х 300 руб.</th>
-                  <th class="basket-table__th">450 руб.</th>
-                </tr>
-              </table>
-              <p class="basket-popup__total">Итого:<span class="total">750 руб.</span></p>
-              <button class="basket-popup__button button" type="submit">Оформить заказ</button>
-            </section>
-
-          </li>
-        </ul>
+            <a class="site-list__link" href="catalog.html">Каталог</a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a class="submenu__link submenu__link--new" href="#">Новинки</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="#">Сливочное</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link submenu__link--active" href="#">Щербеты</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="#">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">О компании</a>
+        </li>
+      </ul>
       </nav>
 
-        <p class="contacts">с 10 до 20, ежедневно
-          <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
-        </p>
+      <ul class="user-list">
+        <li class="user-list__item">
+          <a class="user-list__open-popup" href="#" aria-label="Поиск"></a>
+
+          <form class="search-form form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label class="search-form__label visually-hidden" for="site-search">Поиск по сайту</label>
+            <input class="search-form__input input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
+          </form>
+
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__open-popup" href="#">Вход</a>
+
+          <section class="entrance">
+            <h2 class="visually-hidden">Форма входа</h2>
+
+            <form class="entrance__form form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
+              <p>
+                <label class="entrance__label visually-hidden" for="login-email">E-mail</label>
+                <input class="entrance__input input" type="email" id="login-email" name="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label class="entrance__label visually-hidden" for="login-password">Пароль</label>
+                <input class="entrance__input input" type="password" id="login-password" name="password" placeholder="•••••••">
+              </p>
+              <button class="button entrance__button" type="submit">Войти</button>
+            </form>
+
+            <p class="entrance__links">
+              <a class="entrance__link" href="#">Забыли пароль?</a>
+              <a class="entrance__link" href="#">Новая регистрация</a>
+            </p>
+          </section>
+
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__open-popup" href="#">Пусто</a>
+
+          <section class="basket-popup">
+            <h2 class="basket-popup__title visually-hidden">Корзина</h2>
+
+            <table class="basket-popup__table basket-table">
+              <tr class="basket-table__tr">
+                <th class="basket-table__th">
+                  <span class="basket-table__delete">Удалить</span>
+                </th>
+                <th class="basket-table__th">
+                  <img class="basket-table__image" src="img/products/product_1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                </th>
+                <th class="basket-table__th basket-table__title">Пломбир с апельсиновым джемом</th>
+                <th class="basket-table__th">1,5 кг х <span class="basket-table__price-weight"> 200 руб.</span></th>
+                <th class="basket-table__th">300 руб.</th>
+              </tr>
+              <tr class="basket-table__tr">
+                <th class="basket-table__th">
+                  <span class="basket-table__delete">Удалить</span>
+                </th>
+                <th class="basket-table__th">
+                  <img class="basket-table__image" src="img/products/product_3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </th>
+                <th class="basket-table__th basket-table__title">Клубничный пломбир с присыпкой из белого шоколада</th>
+                <th class="basket-table__th basket-table__quantity">1,5 кг х <span class="basket-table__price-weight"> 300 руб.</span></th>
+                <th class="basket-table__th">450 руб.</th>
+              </tr>
+            </table>
+            <p class="basket-popup__total">Итого:<span class="total"> 750 руб.</span></p>
+            <button class="basket-popup__button button" type="submit">Оформить заказ</button>
+          </section>
+
+        </li>
+      </ul>
+
+      <div class="contacts">
+        <p class="contacts__time">с 10 до 20, ежедневно</p>
+        <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
 
     </header>
+
     <main class="page-main">
       <h1 class="page-main__title">Сливочное мороженое</h1>
 
@@ -155,7 +150,7 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="product-filter__form filter-form" name="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-            <label class="filter-form__label" for="filter-sorting">Сортировка:</label>
+            <label class="filter-form__title" for="filter-sorting">Сортировка:</label>
             <select class="filter-form__select" id="filter-sorting" name="sorting">
               <option class="filter-form__option" value="popular" selected>по популярности</option>
               <option class="filter-form__option" value="price-increase">сначала недорогие</option>
@@ -164,7 +159,7 @@
             </select>
 
             <div class="filter-form__wrapper">
-              <label class="filter-form__label" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
+              <label class="filter-form__title" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
               <input class="filter-form__input" type="range" id="filter-range" name="range" min="100" max="500">
             </div>
 
@@ -224,7 +219,7 @@
         </form>
       </section>
 
-      <section class="product">
+      <section class="product container">
         <h2 class="product__title visually-hidden">Каталог продуктов</h2>
 
         <ul class="product__list">
@@ -352,7 +347,7 @@
 
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
 
       <ul class="social">
         <li class="social__item">
@@ -371,13 +366,13 @@
 
       <ul class="documents">
         <li class="documents__item">
-          <a class="documents__link documents__link--active" href="#">Для поставщиков</a>
-        </li>
-        <li class="documents__item">
-          <a class="documents__link" href="#">О производстве</a>
+          <a class="documents__link" href="#">Для поставщиков</a>
         </li>
         <li class="documents__item">
           <a class="documents__link" href="#">Наши документы</a>
+        </li>
+        <li class="documents__item">
+          <a class="documents__link" href="#">О производстве</a>
         </li>
         <li class="documents__item">
           <a class="documents__link" href="#">Экологические стандарты</a>
