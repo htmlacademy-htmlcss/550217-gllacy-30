@@ -250,10 +250,10 @@ img {
 
 .page-header {
   display: grid;
-  margin-top: 9px;
   margin-bottom: 255px;
   grid-template-rows: min-content min-content;
   grid-template-columns: 154px 1fr 1fr;
+  align-items: center;
   grid-template-areas:
     "logo site user"
     ". . contacts";
@@ -265,6 +265,7 @@ img {
 }
 
 .page-header__logo-link {
+  margin-top: 9px;
   grid-area: logo;
   border-bottom: none;
 }
