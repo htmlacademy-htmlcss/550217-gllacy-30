@@ -154,23 +154,23 @@
       <section class="product-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="product-filter__form filter-form" name="filter-form" action="https://echo.htmlacademy.ru" method="get">
-
           <div class="filter-form__wrapper">
-            <label class="filter-form__title" for="filter-sorting">Сортировка:</label>
-            <select class="filter-form__select" id="filter-sorting" name="sorting">
-              <option class="filter-form__option" value="popular" selected>по популярности</option>
-              <option class="filter-form__option" value="price-increase">сначала недорогие</option>
-              <option class="filter-form__option" value="price-decrease">сначала дорогие</option>
-              <option class="filter-form__option" value="fat">по жирности</option>
-            </select>
-          </div>
-
-            <div class="filter-form__wrapper">
-              <label class="filter-form__title" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
-              <input class="filter-form__input" type="range" id="filter-range" name="range" min="100" max="500">
+            <div class="filter-form__group">
+              <label class="filter-form__title" for="filter-sorting">Сортировка:</label>
+              <select class="filter-form__select" id="filter-sorting" name="sorting">
+                <option class="filter-form__option" value="popular" selected>по популярности</option>
+                <option class="filter-form__option" value="price-increase">сначала недорогие</option>
+                <option class="filter-form__option" value="price-decrease">сначала дорогие</option>
+                <option class="filter-form__option" value="fat">по жирности</option>
+              </select>
             </div>
 
-          <fieldset class="filter-form__fieldset">
+            <div class="filter-form__group">
+            <label class="filter-form__title" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
+            <input class="filter-form__input" type="range" id="filter-range" name="range" min="100" max="500">
+          </div>
+
+          <fieldset class="filter-form__group">
             <legend class="filter-form__title">Жирность:</legend>
 
             <ul class="filter-form__list">
@@ -193,8 +193,9 @@
             </ul>
 
           </fieldset>
-
-          <fieldset class="filter-form__fieldset">
+        </div>
+        <div class="filter-form__wrapper">
+          <fieldset class="filter-form__group">
             <legend class="filter-form__title">Наполнители:</legend>
 
             <ul class="filter-form__list">
@@ -223,6 +224,7 @@
           </fieldset>
 
           <button class="filter-form__button" type="submit">Применить</button>
+        </div>
         </form>
       </section>
 
@@ -358,16 +360,16 @@
 
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#">Facebook</a>
+          <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">Вконтакте</a>
+          <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">Instagram</a>
+          <a class="social__link social__link--inst" href="#" aria-label="Instagram"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">Twitter</a>
+          <a class="social__link social__link--tw" href="#" aria-label="Twitter"></a>
         </li>
       </ul>
 
