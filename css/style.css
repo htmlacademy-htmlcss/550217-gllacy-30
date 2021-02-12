@@ -599,6 +599,7 @@ img {
 }
 
 /* product */
+
 .product {
 }
 
@@ -1013,4 +1014,15 @@ img {
 
 .inner-page {
   background-image: none;
+}
+
+.inner-page .page-header {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.inner-page .contacts__wrapper {
+  position: absolute;
+  top: 75px;
+  right: 27px;
 }
