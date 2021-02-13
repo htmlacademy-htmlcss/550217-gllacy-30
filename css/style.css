@@ -77,11 +77,15 @@
   --about-us-bg-color: #f0e4ce;
 
   --feedback-bg-color: #fefefe;
+  --toggle-bg-color: rgba(255, 255, 255, 0.4);
 
   --basic-link-underline: rgba(255, 255, 255, 0.2);
   --basic-link-hover-underline: rgba(255, 188, 158, 0.3);
   --extra-link-underline: rgba(50, 50, 50, 0.3);
   --extra-link-hover-underline: rgba(232, 77, 55, 0.3);
+
+  --scale-color: rgba(248, 247, 244, 0.5);
+  --bar-color: #f8f7f4;
 
   /* shadows */
   --batton-shadow: rgba(172, 16, 0, 0.64);
@@ -124,10 +128,23 @@
   font-weight: 400;
   text-transform: none;
   color: var(--basic-white);
-  background-color: var(--page-bg-green);
-  background-image: url("../img/slider/slide_1.png");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.page-body--wrapper-1 {
+  background-color: var(--page-bg-green);
+  background-image: url("../img/slider/slide_1.png");
+}
+
+.page-body--wrapper-2 {
+  background-color: var(--page-bg-blue);
+  background-image: url("../img/slider/slide_2.png");
+}
+
+.page-body--wrapper-3 {
+  background-color: var(--page-bg-brown);
+  background-image: url("../img/slider/slide_3.png");
 }
 
 a {
@@ -349,6 +366,11 @@ img {
   background: var(--basic-white);
 }
 
+.user-list__open-popup--active {
+  color: var(--basic-dark-gray);
+  background: var(--basic-white);
+}
+
 /* Search-form */
 .search-form {
   display: none;
@@ -497,6 +519,14 @@ img {
   text-align: center;
 }
 
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
 .slider__list {
   margin: 0;
   padding: 0;
@@ -514,7 +544,7 @@ img {
 }
 
 .slider__button {
-  margin-bottom: 41px;
+  margin-bottom: 42px;
   margin-right: 15px;
   padding: 9px 21px 8px 22px;
   font-size: 32px;
@@ -526,22 +556,31 @@ img {
 
 .slider__controls {
   position: absolute;
-  bottom: 63px;
-  left: 0;
+  bottom: 60px;
+  left: 27px;
   z-index: 20;
-  font-size: 0;
 }
 
-.slider__label {
+.slider__toggle {
   display: inline-block;
-  margin-right: 8px;
-  width: 17px;
-  height: 17px;
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
   vertical-align: top;
   background-color: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
+}
+
+.slider__toggle:hover,
+.slider__toggle:focus {
+  background-color: var(--toggle-bg-color);
+}
+
+.slider__toggle.current {
+  background-color: var(--basic-white);
 }
 
 /* Promo */
@@ -580,20 +619,20 @@ img {
 
 .promo__title {
   margin: 0;
-  margin-bottom: 1px;
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
 }
 
 .promo__content {
-  padding-bottom: 26px;
+  padding-bottom: 23px;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
 
 .promo__button {
+  padding: 11px 22px 13px 25px;
   border-radius: 70px;
   text-align: center;
   align-self: flex-end;
@@ -622,7 +661,7 @@ img {
 }
 
 .product__caption {
-  margin: 0 0 40px 0;
+  margin: 0 0 36px 0;
   text-align: center;
 }
 
@@ -669,14 +708,6 @@ img {
 
 /* About-us */
 
-.about-us__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .about-us {
   padding: 0 21px;
   margin-bottom: 40px;
@@ -688,21 +719,58 @@ img {
   background-image: url("../img/background/wafer_back.jpg");
 }
 
+.about-us__list {
+  display: grid;
+  column-gap: 31px;
+  row-gap: 21px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+}
+
 .about-us__item {
+  position: relative;
+  margin-left: 53px;
+  margin-right: 3px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .about-us__description {
   margin: 0;
-  padding: 25px 0 1px 0;
+  margin-bottom: 15px;
+  padding: 25px 0 0 0;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
 }
 
-.about-us__text {
-  margin-left: 52px;
-  font-size: 16px;
-  line-height: 22px;
+.about-us__item::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -54px;
+  width: 49px;
+  height: 49px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about-us__item--ice-cream::before {
+  background-image: url("../img/icon/ice-cream.svg");
+}
+
+.about-us__item--cow::before {
+  background-image: url("../img/icon/cow.svg");
+}
+
+.about-us__item--leaf::before {
+  background-image: url("../img/icon/leaf.svg");
+}
+
+.about-us__item--therm::before {
+  background-image: url("../img/icon/thearm.svg");
 }
 
 /* Other */
@@ -726,25 +794,30 @@ img {
   background-image: url("../img/background/strawberry_back.jpg");
 }
 
+.blog__title {
+  margin: 0;
+  padding: 18px 0 0 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .blog__link {
+  display: inline-block;
+  padding: 1px 10px 0 20px;
+  width: 310px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-dark-gray);
   outline: none;
-  border-bottom: var(--blog-link-border);
+  text-decoration: underline;
 }
 
 .blog__link:hover {
   color: var(--extra-link-hover-color);
-  border-bottom: var(--extra-link-hover-border);
-  border-bottom-width: 2px;
-}
-
-.blog__text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
+  text-decoration: underline;
+  text-decoration-color: var(--extra-link-hover-underline);
 }
 
 /* new-sub */
@@ -1048,6 +1121,51 @@ img {
   border-radius: 20px;
   background-color: var(--basic-bg-color);
 }
+/* Range-filter */
+.range-filter {
+}
+
+.range-controls {
+  position: relative;
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 36px;
+  background: var(--basic-bg-color);
+  border-radius: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--scale-color);
+}
+
+.range-controls .bar {
+  height: 2px;
+  background: var(--bar-color);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 2px;
+  border: 6px solid var(--basic-white);
+  background-color: var(--extra-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle--min {
+  left: 18px;
+}
+
+.range-controls .toggle--max {
+  left: 80px;
+}
+
 /* Pagination */
 
 .pagination {
@@ -1090,6 +1208,7 @@ img {
 
 .inner-page {
   background-image: none;
+  background-color: var(--page-bg-green);
 }
 
 .inner-page .page-header {

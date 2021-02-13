@@ -90,7 +90,7 @@
 
           </li>
           <li class="user-list__item">
-            <a class="user-list__open-popup" href="#">2 товара</a>
+            <a class="user-list__open-popup user-list__open-popup--active " href="#">2 товара</a>
 
             <section class="basket-popup">
               <h2 class="basket-popup__title visually-hidden">Корзина</h2>
@@ -165,10 +165,25 @@
               </select>
             </div>
 
-            <div class="filter-form__group">
-            <label class="filter-form__title" for="filter-range">Цена: 100 &#8381; – 500 &#8381;</label>
-            <input class="filter-form__input" type="range" id="filter-range" name="range" min="100" max="500">
-          </div>
+            <fieldset class="filter-form__group">
+              <legend class="filter-form__title">Цена: 100 &#8381; – 500 &#8381;</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"style="
+                    width: 50%;
+                    margin-left: 20%"></div>
+                  </div>
+                  <div class="toggle toggle--min" tabindex="0" style="
+                  left: 20%
+                "></div>
+                  <div class="toggle toggle--max" tabindex="0" style="
+                  left: 60%
+                "></div>
+                </div>
+              </div>
+
+          </fieldset>
 
           <fieldset class="filter-form__group">
             <legend class="filter-form__title">Жирность:</legend>
