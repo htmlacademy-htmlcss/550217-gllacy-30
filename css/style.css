@@ -1065,6 +1065,10 @@ img {
   list-style: none;
 }
 
+.documents__item {
+  position: relative;
+}
+
 .documents__link {
   font-size: 13px;
   line-height: 18px;
@@ -1074,24 +1078,27 @@ img {
   text-decoration-color: var(--basic-link-underline);
 }
 
+.documents__link:hover,
+.documents__link:focus,
+.documents__link:active {
+  color: var(--basic-link-hover-color);
+}
+
 .documents__link--provider {
   position: relative;
   font-weight: 700;
 }
 
-.documents__link--provider::before {
-  content: "";
+.documents__link--provider:hover + .documents__link-icon path {
+  fill: var(--basic-link-hover-color);
+}
+
+.documents__link-icon {
   position: absolute;
   top: 3px;
   left: -21px;
   width: 15px;
   height: 15px;
-  background-image: url("../img/icon/heart.svg");
-  background-repeat: no-repeat;
-}
-
-.documents__link:hover {
-  font-weight: 700;
 }
 
 /* Copyright */
@@ -1152,8 +1159,15 @@ img {
   list-style: none;
 }
 
-.breadcrumbs__link {
+.breadcrumbs__item {
   margin-right: 22px;
+}
+
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__link {
   font-size: 14px;
   line-height: 16px;
   outline: none;
