@@ -14,118 +14,128 @@
 
     <title>Глейси</title>
   </head>
-  <body class="page-body">
+  <body class="page-body page-body--wrapper-green">
 
     <header class="page-header container">
 
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="img/logo_gllacy.svg" width="154" height="64" alt="Логотип магазина 'Глейси'">
-      </a>
+      <div class="page-header__wrapper">
 
-      <nav class="nav">
-        <ul class="nav__list site-list">
-          <li class="site-list__item site-list">
-            <a class="site-list__link" href="catalog.html">Каталог</a>
-          <ul class="submenu">
-            <li class="submenu__item">
-              <a class="submenu__link submenu__link--new" href="#">Новинки</a>
-            </li>
-            <li class="submenu__item">
-              <a class="submenu__link" href="#">Сливочное</a>
-            </li>
-            <li class="submenu__item">
-              <a class="submenu__link submenu__link--active" href="#">Щербеты</a>
-            </li>
-            <li class="submenu__item">
-              <a class="submenu__link" href="#">Фруктовый лед</a>
-            </li>
-            <li class="submenu__item">
-              <a class="submenu__link" href="#">Мелорин</a>
-            </li>
-          </ul>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Доставка и оплата</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">О компании</a>
-        </li>
-      </ul>
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="img/logo_gllacy.svg" width="154" height="64" alt="Логотип магазина 'Глейси'">
+        </a>
 
-    </nav>
+        <nav class="nav">
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог</a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a class="submenu__link submenu__link--new" href="#">Новинки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Сливочное</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link submenu__link--active" href="#">Щербеты</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">О компании</a>
+          </li>
+        </ul>
 
-      <ul class="user-list">
-        <li class="user-list__item">
-          <a class="user-list__open-popup" href="#" aria-label="Поиск"></a>
+      </nav>
 
-          <form class="search-form form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="search-form__label visually-hidden" for="site-search">Поиск по сайту</label>
-            <input class="search-form__input input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
-          </form>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a class="user-list__open-popup" href="#" aria-label="Поиск">
+              <!-- <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.6652l-4.9215-4.93226c.9042-1.25106 1.3041-2.79793 1.1199-4.3316-.1843-1.53367-.939-2.94124-2.1136-3.94152C8.91022.45954 7.40233-.0598191 5.86234.00548954 4.32234.0707982 2.86363.715967 1.77757 1.81212.691516 2.90827.0580813 4.3747.0038002 5.91849-.050481 7.46228.478388 8.96976 1.48476 10.1398c1.00637 1.17 2.41616 1.9165 3.94775 2.0903 1.53158.1738 3.07221-.2379 4.31412-1.1529L14.6586 16 16 14.6652zm-9.91848-4.2885c-.84073 0-1.66257-.2499-2.36161-.71796-.69904-.46811-1.24387-1.13344-1.5656-1.91187-.32173-.77843-.40591-1.63499-.2419-2.46136.16402-.82638.56887-1.58545 1.16335-2.18124.59448-.59578 1.3519-1.00151 2.17647-1.16589.82457-.16437 1.67926-.08001 2.45599.24242.77673.32244 1.44061.86847 1.90769 1.56903.46709.70057.71639 1.52421.71639 2.36678-.0025 1.12907-.45115 2.21119-1.24779 3.00957-.79663.79838-1.87638 1.24802-3.00299 1.25052z" fill="#fff"/></svg> -->
+            </a>
 
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__open-popup" href="#">Вход</a>
-
-          <section class="entrance">
-            <h2 class="visually-hidden">Форма входа</h2>
-
-            <form class="entrance__form form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
-              <p>
-                <label class="entrance__label visually-hidden" for="login-email">E-mail</label>
-                <input class="entrance__input input" type="email" id="login-email" name="email" placeholder="email@example.com">
-              </p>
-              <p>
-                <label class="entrance__label visually-hidden" for="login-password">Пароль</label>
-                <input class="entrance__input input" type="password" id="login-password" name="password" placeholder="•••••••">
-              </p>
-              <button class="button entrance__button" type="submit">Войти</button>
+            <form class="search-form form" name="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="search-form__label visually-hidden" for="site-search">Поиск по сайту</label>
+              <input class="search-form__input input" type="search" id="site-search" name="search" placeholder="Крем-брюле">
             </form>
 
-            <p class="entrance__links">
-              <a class="entrance__link" href="#">Забыли пароль?</a>
-              <a class="entrance__link" href="#">Новая регистрация</a>
-            </p>
-          </section>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__open-popup" href="#">
+              <!-- <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5c-.53043 0-1.03914.210714-1.41421.585786C3.21071.960859 3 1.46957 3 2v2h2V2h13v15H5v-2H3v2c0 .5304.21071 1.0391.58579 1.4142C3.96086 18.7893 4.46957 19 5 19h13c.5304 0 1.0391-.2107 1.4142-.5858S20 17.5304 20 17V2c0-.53043-.2107-1.039141-.5858-1.414214C19.0391.210714 18.5304 0 18 0z" fill="#fff"/></svg> -->
+              Вход</a>
 
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__open-popup" href="#">Пусто</a>
+            <section class="entrance">
+              <h2 class="visually-hidden">Форма входа</h2>
 
-          <section class="basket-popup">
-            <h2 class="basket-popup__title visually-hidden">Корзина</h2>
+              <form class="entrance__form form" name="entrance-form" action="https://echo.htmlacademy.ru" method="GET">
+                <p>
+                  <label class="entrance__label visually-hidden" for="login-email">E-mail</label>
+                  <input class="entrance__input input" type="email" id="login-email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label class="entrance__label visually-hidden" for="login-password">Пароль</label>
+                  <input class="entrance__input input" type="password" id="login-password" name="password" placeholder="•••••••">
+                </p>
+                <button class="button entrance__button" type="submit">Войти</button>
+              </form>
 
-            <table class="basket-popup__table basket-table">
-              <tr class="basket-table__tr">
-                <th class="basket-table__th">
-                  <span class="basket-table__delete">Удалить</span>
-                </th>
-                <th class="basket-table__th">
-                  <img class="basket-table__image" src="img/products/product_1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                </th>
-                <th class="basket-table__th basket-table__title">Пломбир с апельсиновым джемом</th>
-                <th class="basket-table__th">1,5 кг х <span class="basket-table__price-weight"> 200 руб.</span></th>
-                <th class="basket-table__th">300 руб.</th>
-              </tr>
-              <tr class="basket-table__tr">
-                <th class="basket-table__th">
-                  <span class="basket-table__delete">Удалить</span>
-                </th>
-                <th class="basket-table__th">
-                  <img class="basket-table__image" src="img/products/product_3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                </th>
-                <th class="basket-table__th basket-table__title">Клубничный пломбир с присыпкой из белого шоколада</th>
-                <th class="basket-table__th basket-table__quantity">1,5 кг х <span class="basket-table__price-weight"> 300 руб.</span></th>
-                <th class="basket-table__th">450 руб.</th>
-              </tr>
-            </table>
-            <p class="basket-popup__total">Итого:<span class="total"> 750 руб.</span></p>
-            <button class="basket-popup__button button" type="submit">Оформить заказ</button>
-          </section>
+              <p class="entrance__links">
+                <a class="entrance__link" href="#">Забыли пароль?</a>
+                <a class="entrance__link" href="#">Новая регистрация</a>
+              </p>
+            </section>
 
-        </li>
-      </ul>
+          </li>
 
+          <li class="user-list__item">
+            <a class="user-list__open-popup" href="#">
+              <!-- <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.70345 2l-.24184-2H0v2h3.66795l1.51151 13H19.2869L21 2H5.70345zM17.5034 13H6.97313L5.96545 4H18.6924l-1.189 9zM7.03359 20c1.11305 0 2.01535-.8954 2.01535-2s-.9023-2-2.01535-2c-1.11305 0-2.01536.8954-2.01536 2s.90231 2 2.01536 2zM16.1027 20c1.113 0 2.0153-.8954 2.0153-2s-.9023-2-2.0153-2c-1.1131 0-2.0154.8954-2.0154 2s.9023 2 2.0154 2z" fill="#fff"/></svg> -->
+              Пусто</a>
+
+            <section class="basket-popup">
+              <h2 class="basket-popup__title visually-hidden">Корзина</h2>
+
+              <table class="basket-popup__table basket-table">
+                <tr class="basket-table__tr">
+                  <th class="basket-table__th">
+                    <span class="basket-table__delete">Удалить</span>
+                  </th>
+                  <th class="basket-table__th">
+                    <img class="basket-table__image" src="img/products/product_1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </th>
+                  <th class="basket-table__th basket-table__title">Пломбир с апельсиновым джемом</th>
+                  <th class="basket-table__th">1,5 кг х <span class="basket-table__price-weight"> 200 руб.</span></th>
+                  <th class="basket-table__th">300 руб.</th>
+                </tr>
+                <tr class="basket-table__tr">
+                  <th class="basket-table__th">
+                    <span class="basket-table__delete">Удалить</span>
+                  </th>
+                  <th class="basket-table__th">
+                    <img class="basket-table__image" src="img/products/product_3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </th>
+                  <th class="basket-table__th basket-table__title">Клубничный пломбир с присыпкой из белого шоколада</th>
+                  <th class="basket-table__th basket-table__quantity">1,5 кг х <span class="basket-table__price-weight"> 300 руб.</span></th>
+                  <th class="basket-table__th">450 руб.</th>
+                </tr>
+              </table>
+              <p class="basket-popup__total">Итого:<span class="total"> 750 руб.</span></p>
+              <button class="basket-popup__button button" type="submit">Оформить заказ</button>
+            </section>
+          </li>
+
+        </ul>
+
+      </div>
       <div class="contacts">
         <p class="contacts__time">с 10 до 20, ежедневно</p>
         <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
@@ -135,26 +145,26 @@
     <main class="page-main">
       <h1 class="page-main__title visually-hidden">Магазин мороженого "Глейси"</h1>
 
-      <section class="slider">
+      <section class="slider container">
 
         <div class="slider__controls">
-          <button class="slider__label visually-hidden" type="button" name="toggle"></button>
-          <button class="slider__label visually-hidden" type="button" name="toggle"></button>
-          <button class="slider__label visually-hidden" type="button" name="toggle"></button>
+          <button class="slider__toggle current" type="button" aria-label="Первый слайд"></button>
+          <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
+          <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
         </div>
         <ul class="slider__list">
 
-          <li class="slider__item" id="slide1">
+          <li class="slider__item slide slide-current" id="slide1">
           <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h3>
           <a class="button slider__button" href="#">Давайте оба!</a>
         </li>
 
-        <li class="slider__item visually-hidden" id="slide2">
+        <li class="slider__item slide" id="slide2">
           <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h3>
           <a class="button slider__button" href="#">Давайте оба!</a>
         </li>
 
-        <li class="slider__item visually-hidden" id="slide3">
+        <li class="slider__item slide" id="slide3">
           <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h3>
           <a class="button slider__button" href="#">Давайте оба!</a>
         </li>
@@ -186,35 +196,35 @@
 
         <ul class="product__list">
           <li class="product__item product__item--hit">
-            <img class="product__image" src="img/products/product_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="product__price">310 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
               <a class="product__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h3>
+            <img class="product__image" src="img/products/product_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="product__price">310 &#8381;<span class="product__price-weight">/кг</span></p>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
           <li class="product__item product__item--hit">
-            <img class="product__image" src="img/products/product_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <p class="product__price">380 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
               <a class="product__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </h3>
+            <img class="product__image" src="img/products/product_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="product__price">380 &#8381;<span class="product__price-weight">/кг</span></p>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
           <li class="product__item product__item--hit">
-            <img class="product__image" src="img/products/product_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p class="product__price">355 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
               <a class="product__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h3>
+            <img class="product__image" src="img/products/product_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="product__price">355 &#8381;<span class="product__price-weight">/кг</span></p>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
           <li class="product__item product__item--hit">
-            <img class="product__image" src="img/products/product_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="product__price">415 &#8381;<span class="product__price-weight">/кг</span></p>
             <h3 class="product__caption">
               <a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h3>
+            <img class="product__image" src="img/products/product_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="product__price">415 &#8381;<span class="product__price-weight">/кг</span></p>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
@@ -226,40 +236,44 @@
         <p class="about-us__description">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 
         <ul class="about-us__list">
-          <li class="about-us__item">
-            <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <li class="about-us__item about-us__item--ice-cream">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
-          <li class="about-us__item">
-            <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <li class="about-us__item about-us__item--cow">
+           Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </li>
-          <li class="about-us__item">
-            <p class="about-us__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <li class="about-us__item about-us__item--leaf">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
-          <li class="about-us__item">
-            <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          <li class="about-us__item about-us__item--therm">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
         </ul>
 
       </section>
 
       <section class="other container" aria-label="Другое">
-            <article class="other__item blog">
-              <h2 class="blog__title visually-hidden">Наш блог</h2>
-              <p class="blog__text">Новое в нашем блоге</p>
-              <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-            </article>
-            <form class="other__item news-sub form" name="news-sub-form" action="https://echo.htmlacademy.ru" method="POST">
-              <label class="news-sub__label" for="news-sub-input">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
-              <input class="news-sub__input input" id="news-sub-input" type="email" placeholder="email@example.com">
+        <article class="other__item blog">
+          <h2 class="visually-hidden">Наш блог</h2>
+          <p class="blog__title">Новое в нашем блоге</p>
+          <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </article>
+        <form class="other__item news-sub form" name="news-sub-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="news-sub__wrapper">
+            <p class="news-sub__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <div class="new-sub__wrapper-form">
+              <input class="news-sub__input input" id="news-sub-input" type="email" placeholder="email@example.com" required>
               <button class="button news-sub__button" type="submit">Отправить</button>
-            </form>
+            </div>
+          </div>
+        </form>
       </section>
 
       <div class="map">
 
         <section class="feedback container">
           <h2 class="feedback__title visually-hidden">Как нас найти</h2>
-          <p class="feedback__text">Адрес главного офиса и офлайн-магазина:<br> <span class="feedback__text-strong">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+          <p class="feedback__text">Адрес главного офиса<br> и офлайн-магазина:<br> <span class="feedback__text-strong">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
           <p class="feedback__text">Для заказов по телефону: <br>
             <a class="feedback__link" href="tel:+78124502525">8 812 450-25-25</a><br>
               (с 10 до 20 ежедневно)</p>
@@ -297,22 +311,22 @@
 
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#">Facebook</a>
+          <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">Вконтакте</a>
+          <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">Instagram</a>
+          <a class="social__link social__link--inst" href="#" aria-label="Instagram"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">Twitter</a>
+          <a class="social__link social__link--tw" href="#" aria-label="Twitter"></a>
         </li>
       </ul>
 
       <ul class="documents">
         <li class="documents__item">
-          <a class="documents__link" href="#">Для поставщиков</a>
+          <a class="documents__link documents__link--provider" href="#">Для поставщиков</a>
         </li>
         <li class="documents__item">
           <a class="documents__link" href="#">Наши документы</a>
