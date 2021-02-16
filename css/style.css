@@ -424,6 +424,7 @@ img {
 
 .basket-table__image {
   border-radius: 50%;
+  object-fit: contain;
 }
 
 .basket-table__quantity {
@@ -665,6 +666,9 @@ img {
   width: 267px;
   min-height: 320px;
 }
+.product__item:hover {
+  z-index: 2;
+}
 
 .product__item:nth-child(4n + 4) {
   margin-right: 0;
@@ -710,6 +714,7 @@ img {
   width: 267px;
   height: 267px;
   border-radius: 50%;
+  object-fit: contain;
 }
 
 .product__price {
@@ -893,17 +898,20 @@ img {
   padding: 0;
   color: var(--extra-dark-gray);
 }
-.new-sub__wrapper-form {
+.news-sub__wrapper-form {
   display: flex;
 }
 
 .news-sub__input {
   margin-right: 8px;
 }
+
 .news-sub__button {
   padding: 11px 19px 10px 21px;
 }
+
 /* Map */
+
 .map {
   position: relative;
   margin: 0 auto;
@@ -915,6 +923,7 @@ img {
   background-repeat: no-repeat;
   background-position: 266px 137px, center;
 }
+
 /* Feedback */
 
 .feedback {
