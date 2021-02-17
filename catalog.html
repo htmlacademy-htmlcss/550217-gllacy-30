@@ -126,11 +126,10 @@
           </li>
         </ul>
     </div>
-    <div class="contacts__wrapper">
-        <div class="contacts">
-          <p class="contacts__time">с 10 до 20, ежедневно</p>
-          <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
+
+    <div class="contacts">
+      <p class="contacts__time">с 10 до 20, ежедневно</p>
+      <a class="contacts__number" href="tel:+78124502525">8 812 450-25-25</a>
     </div>
 
     </header>
@@ -170,7 +169,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar"style="
+                    <div class="bar" style="
                     width: 50%;
                     margin-left: 20%"></div>
                   </div>
@@ -276,7 +275,7 @@
               <a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h3>
             <img class="product__image" src="img/products/product_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="product__price">415 &#8381;/кг</p>
+            <p class="product__price">415 &#8381;<span class="product__price-weight">/кг</span></p>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
           <li class="product__item">
@@ -308,7 +307,7 @@
               <a class="product__link" href="#">Сливочное с шоколадной стружкой</a>
             </h3>
             <img class="product__image" src="img/products/product_8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-            <p class="product__price">320 &#8381;/кг</p>
+            <p class="product__price">320 &#8381;<span class="product__price-weight">/кг</span></p>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
           <li class="product__item">
@@ -340,14 +339,15 @@
               <a class="product__link" href="#">Сливочное с мятным сиропом</a>
             </h3>
             <img class="product__image" src="img/products/product_12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-            <p class="product__price">420 &#8381;/кг</p>
+            <p class="product__price">420 &#8381;<span class="product__price-weight">/кг</span></p>
             <a class="button product__button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
 
           <ul class="pagination">
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--back" aria-label="Страница назад"></a>
+              <a class="pagination__button pagination__button--back disabled" aria-label="Страница назад">
+              </a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination__link--active">1</a>
@@ -365,7 +365,7 @@
               <a class="pagination__link" href="#">5</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--forward" aria-label="Страница вперед"></a>
+              <a class="pagination__button pagination__button--forward" aria-label="Страница вперед"></a>
             </li>
           </ul>
 
