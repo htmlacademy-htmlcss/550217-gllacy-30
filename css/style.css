@@ -1272,10 +1272,13 @@ img {
   bottom: 0;
   z-index: 20;
   display: none;
-  /* Менять на flex */
   align-items: center;
   justify-content: center;
   background: var(--modal-bg-color);
+}
+
+.modal--open {
+  display: flex;
 }
 
 .modal__overlay {
