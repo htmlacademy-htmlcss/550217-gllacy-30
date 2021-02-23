@@ -87,6 +87,7 @@
   --scale-color: rgba(248, 247, 244, 0.5);
   --bar-color: #f8f7f4;
   --bg-opacity-02: rgba(255, 255, 255, 0.2);
+  --modal-bg-color: rgba(0, 0, 0, 0.3);
 
   /* shadows */
   --batton-shadow: rgba(172, 16, 0, 0.64);
@@ -1261,34 +1262,42 @@ img {
   padding: 10px 29px 10px 28px;
 }
 
-/* Feedback-popup */
+/* Modal */
 
-.feedback-popup {
-  display: none;
+.modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 20;
-  margin: auto;
+  display: none;
+  /* Менять на flex */
+  align-items: center;
+  justify-content: center;
+  background: var(--modal-bg-color);
+}
+
+.modal__overlay {
+  position: relative;
   width: 477px;
   min-height: 441px;
   padding: 15px 24px 15px 23px;
 }
 
-.feedback-popup__input {
+.modal__input {
   font-size: 16px;
   line-height: 20px;
   border: 1px solid var(--border-input-feedback);
 }
 
-.feedback-popup__input {
+.modal__input {
   font-size: 16px;
   line-height: 20px;
   border: 1px solid var(--border-input-feedback);
 }
 
-.feedback-popup__form {
+.modal__form {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1296,7 +1305,7 @@ img {
   padding: 0;
 }
 
-.feedback-popup__title {
+.modal__title {
   margin: 0;
   padding-bottom: 22px;
   color: var(--basic-dark-gray);
@@ -1305,18 +1314,18 @@ img {
   line-height: 28px;
 }
 
-.feedback-popup__container {
+.modal__container {
   margin: 0px;
   margin-bottom: 22px;
   padding: 0px;
 }
 
-.feedback-popup__input {
+.modal__input {
   padding-left: 14px;
   width: 62%;
 }
 
-.feedback-popup__input--textarea {
+.modal__input--textarea {
   margin: 0;
   width: 100%;
   min-height: 154px;
@@ -1324,13 +1333,13 @@ img {
   color: var(--placeholder-input-color);
 }
 
-.feedback-popup__button-post {
+.modal__button-post {
   margin-top: -3px;
   padding: 9px 25px 11px 25px;
   align-self: flex-end;
 }
 
-.feedback-popup__button-close {
+.modal__button-close {
   position: absolute;
   top: 16px;
   right: 13px;

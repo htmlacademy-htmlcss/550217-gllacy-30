@@ -282,28 +282,30 @@
           <a class="feedback__button button" tabindex="0">Форма обратной связи</a>
         </section>
 
-        <section class="feedback-popup popup ">
-          <h2 class="feedback-popup__title">Мы обязательно вам ответим!</h2>
+        <section class="modal">
+          <div class="modal__overlay popup">
+            <h2 class="modal__title">Мы обязательно вам ответим!</h2>
 
-          <form class="feedback-popup__form" name="feedback-popup-form" action="https://echo.htmlacademy.ru" method="POST">
+            <form class="modal__form" name="modal-form" action="https://echo.htmlacademy.ru" method="POST">
 
-            <p class="feedback-popup__container">
-              <label class="visually-hidden" for="username">Имя Фамилия</label>
-              <input class="feedback-popup__input input" type="text" id="username" name="username" placeholder="Имя Фамилия" required>
-            </p>
-            <p class="feedback-popup__container">
-              <label class="visually-hidden">E-mail</label>
-              <input class="feedback-popup__input input" type="email" placeholder="email@example.com" required>
-            </p>
-            <p class="feedback-popup__container">
-              <label class="visually-hidden" for="feedback-popup_textarea">Сообщение</label>
-              <textarea class="feedback-popup__input feedback-popup__input--textarea input" id="feedback-popup_textarea">В свободной форме</textarea>
-            </p>
+              <p class="modal__container">
+                <label class="visually-hidden" for="username">Имя Фамилия</label>
+                <input class="modal__input input" type="text" id="username" name="username" placeholder="Имя Фамилия" required>
+              </p>
+              <p class="modal__container">
+                <label class="visually-hidden">E-mail</label>
+                <input class="modal__input input" type="email" placeholder="email@example.com" required>
+              </p>
+              <p class="modal__container">
+                <label class="visually-hidden" for="modal_textarea">Сообщение</label>
+                <textarea class="modal__input modal__input--textarea input" id="modal_textarea">В свободной форме</textarea>
+              </p>
 
-            <button class="feedback-popup__button-post button" type="submit">Отправить</button>
-          </form>
+              <button class="modal__button-post button" type="submit">Отправить</button>
+            </form>
 
-          <button class="feedback-popup__button-close" type="button" aria-label="Закрыть"></button>
+            <button class="modal__button-close" type="button" aria-label="Закрыть"></button>
+          </div>
         </section>
 
       </div>
