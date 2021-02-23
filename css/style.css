@@ -828,7 +828,7 @@ img {
 .slider__controls {
   position: absolute;
   bottom: 60px;
-  left: 27px;
+  left: 0;
   z-index: 20;
 }
 
