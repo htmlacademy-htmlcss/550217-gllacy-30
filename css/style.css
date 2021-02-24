@@ -1894,3 +1894,7 @@ img {
 .inner-page .product__image {
   margin-bottom: 12px;
 }
+
+.inner-page .product__img {
+  padding: 0;
+}
