@@ -15,7 +15,6 @@ try {
   isStorageSupport = false;
 }
 
-
 openModalButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal--open');
