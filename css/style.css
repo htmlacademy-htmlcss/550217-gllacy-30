@@ -1704,13 +1704,13 @@ img {
 
 .breadcrumbs__item::after {
   position: absolute;
-  content: "»";
+  content: '»';
   top: 0;
   right: -16px;
 }
 
 .breadcrumbs__item:last-child::after {
-  content: "";
+  content: '';
 }
 
 .breadcrumbs__item:last-child {
@@ -1768,12 +1768,12 @@ img {
 }
 
 .filter-form__select-wrapper {
+  border-radius: 20px;
   background-color: var(--basic-bg-color);
   background-image: url("../img/icon/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: 170px 12px;
   cursor: pointer;
-  border-radius: 20px;
 }
 
 .filter-form__select {
