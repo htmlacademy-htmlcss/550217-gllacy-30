@@ -39,7 +39,7 @@
                 <a class="submenu__link" href="catalog.html">Сливочное</a>
               </li>
               <li class="submenu__item">
-                <a class="submenu__link submenu__link--active" href="#">Щербеты</a>
+                <a class="submenu__link" href="#">Щербеты</a>
               </li>
               <li class="submenu__item">
                 <a class="submenu__link" href="#">Фруктовый лед</a>
@@ -76,6 +76,7 @@
           </form>
 
         </li>
+
         <li class="user-list__item">
           <a class="user-list__link" href="#" aria-label="Вход">
             <svg class="user-list__icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,8 +108,8 @@
               </div>
             </div>
           </form>
-
         </li>
+
         <li class="user-list__item">
           <a class="user-list__link" href="#" aria-label="Корзина">
             <svg class="user-list__icon" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -300,8 +301,9 @@
           <p class="news-sub__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
             что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <div class="news-sub__wrapper-form">
-            <input class="news-sub__input input" id="news-sub-input" type="email" placeholder="email@example.com"
-              required>
+            <label class="visually-hidden" for="news-sub-input">E-mail</label>
+            <input class="news-sub__input input" id="news-sub-input" name="news-sub-input" type="email"
+              placeholder="email@example.com" required>
             <button class="button news-sub__button" type="submit">Отправить</button>
           </div>
         </div>
@@ -322,7 +324,7 @@
           <a class="feedback__link" href="tel:+78124502525">8 812 450-25-25</a><br>
           (с 10 до 20 ежедневно)
         </p>
-        <a class="feedback__button button" tabindex="0">Форма обратной связи</a>
+        <a class="feedback__button button" href="#">Форма обратной связи</a>
       </section>
 
       <section class="modal">
@@ -337,9 +339,9 @@
                 placeholder="Имя Фамилия" required>
             </p>
             <p class="modal__container">
-              <label class="visually-hidden">E-mail</label>
-              <input class="modal__input modal__input--email input" type="email" placeholder="email@example.com"
-                required>
+              <label class="visually-hidden" for="usermail">E-mail</label>
+              <input class="modal__input modal__input--email input" type="email" id="usermail" name="usermail"
+                placeholder="email@example.com" required>
             </p>
             <p class="modal__container">
               <label class="visually-hidden" for="modal_textarea">Сообщение</label>
